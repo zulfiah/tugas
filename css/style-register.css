@@ -157,3 +157,28 @@ label::before{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+.tombol{
+    display: block;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #fc8ca3;
+    box-shadow: 0 0px 10px black;
+    cursor: pointer;
+    padding: 15px 15px 10px 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.tombol:hover{
+    background-color: #fc8ca3;
+    color: #fff;
+}

@@ -6,18 +6,24 @@
     <title>PicowStore</title>
     <link rel="stylesheet" href="../css/style-home.css">
     <link rel="icon" type="image/x-icon" href="../image/logo/sapi.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <nav>
         <div class="container">
             <a href="home.html"><img src="../image/logo/sapi.ico" alt="">PicowStore</a>
-            <ul class="navigation">
-                <li><a href="nav-wanita.html">Wanita</a></li>
-                <li><a href="nav-pria.html">Pria</a></li>
-                <li><a href="nav-anak.html">Anak-anak</a></li>
-                <li><a href="nav-couple.html">Couple</a></li>
-                <li><a href="../index.html">Logout</a></li>
-            </ul>
+        <ul class="navigation">
+            <li><a href="nav-wanita.html">Wanita</a></li>
+            <li><a href="nav-pria.html">Pria</a></li>
+            <li><a href="nav-anak.html">Anak-anak</a></li>
+            <li><a href="nav-couple.html">Couple</a></li>
+            <li class="dropdown2">
+                <a href="#">Tentang</a>
+                <div  class="dropdown-content2">
+                        <a href="tentang.html">Tentang</a>
+                        <a href="../index.html">Log Out</a>
+                </div>
+        </ul>
         </div>
     </nav>
     <div class="content">
@@ -40,6 +46,13 @@
             <br>Jl. Maju No.1, Jepun
             <br>WA Admin 088888888222
         </div>
+
+        <div class="sosial-media">
+            <a href="#" target=“_blank”><i class='bx bxl-whatsapp bx-tada' ></i></a>
+            <a href="#" target=“_blank”><i class='bx bxl-facebook-circle bx-tada' ></i></a>
+            <a href="#" target=“_blank”><i class='bx bxl-instagram bx-tada' ></i></a>
+        </div>
+
         <div class="container2">
             <ul class="navigation2">
                 <a href="nav-wanita.html"><li>Wanita</li></a>
@@ -49,5 +62,10 @@
             </ul>
         </div>
     </nav>
+
+    <button id="tombol" class="tombol"><i class='bx bxs-to-top bx-tada' ></i></button>
+
+    <script src="../javascript/home.js"></script>
+
 </body>
 </html>
