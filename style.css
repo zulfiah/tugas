@@ -110,3 +110,18 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width : 768px){
+    .wrapper{
+       margin: 0 10px 0 10px;
+    }
+   
+    .remember-forgot label{
+       font-size: 12px;
+    }
+   
+    .remember-forgot a{
+       font-size: 12px;
+    }
+   
+   }

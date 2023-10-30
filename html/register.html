@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PicowStore | Register Page</title>
     <link rel="stylesheet" href="../css/style-register.css">
+    <!-- <link rel="stylesheet" href="../css/style-home.css"> -->
     <link rel="icon" type="image/x-icon" href="../image/logo/sapi.ico">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <div class="wrapper">
         <form action="">
@@ -25,34 +28,33 @@
                 <input type="email" placeholder="Email" required>
             </div>
             <div class="input-box" id="phone">
-                <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                type = "number"
-                placeholder="Phone Number"
-                maxlength = "13" required>
+                <input
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" placeholder="Phone Number" maxlength="13" required>
             </div>
-            <div class="input-box" >
+            <div class="input-box">
                 <input type="text" id="rupiah" placeholder="Salary" required>
                 <script src="../javascript/script-register.js"></script>
             </div>
             <div class="input-box">
                 <p>Religion
-                <select name="" id="religion">
-                    <option value="" class="agama">Islam</option>
-                    <option value="" class="agama">Protestan</option>
-                    <option value="" class="agama">Katholik</option>
-                    <option value="" class="agama">Hindu</option>
-                    <option value="" class="agama">Buddha</option>
-                    <option value="" class="agama">Khonghucu</option>
-                </select>
+                    <select name="" id="religion">
+                        <option value="" class="agama">Islam</option>
+                        <option value="" class="agama">Protestan</option>
+                        <option value="" class="agama">Katholik</option>
+                        <option value="" class="agama">Hindu</option>
+                        <option value="" class="agama">Buddha</option>
+                        <option value="" class="agama">Khonghucu</option>
+                    </select>
             </div>
-            
+
             <div class="gender">
-                    <input type="radio" name="gndr" id="male"> 
-                    <label for="male">Male</label>
-                    <input type="radio" name="gndr" id="female">
-                    <label for="female">Female</label>
+                <input type="radio" name="gndr" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gndr" id="female">
+                <label for="female">Female</label>
             </div>
-            
+
             <a href="home.html"><button type="button" class="btn">Register</button></a>
 
             <div class="register-link">
@@ -60,10 +62,14 @@
             </div>
         </form>
     </div>
-    
-    <button id="tombol" class="tombol"><i class='bx bxs-to-top bx-tada' ></i></button>
 
-    <script src="../javascript/home.js"></script>
+    <button type="button" class="text-light bg-dark shadow btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class='bx bxs-to-top bx-tada'></i>
+    </button>
 
+    <script src="../home.js"></script>
+        
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

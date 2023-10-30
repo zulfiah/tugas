@@ -1,71 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PicowStore</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style-home.css">
-    <link rel="icon" type="image/x-icon" href="../image/logo/sapi.ico">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>PicowStore</title>
+    <link rel="icon" type="image/x-icon" href="../image/logo/sapi.ico">
 </head>
-<body>
-    <nav>
-        <div class="container">
-            <a href="home.html"><img src="../image/logo/sapi.ico" alt="">PicowStore</a>
-        <ul class="navigation">
-            <li><a href="nav-wanita.html">Wanita</a></li>
-            <li><a href="nav-pria.html">Pria</a></li>
-            <li><a href="nav-anak.html">Anak-anak</a></li>
-            <li><a href="nav-couple.html">Couple</a></li>
-            <li class="dropdown2">
-                <a href="#">Tentang</a>
-                <div  class="dropdown-content2">
-                        <a href="tentang.html">Tentang</a>
-                        <a href="../index.html">Log Out</a>
+
+<body style="background-color: #fc8ca3;">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top position-fixed-top mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="../image/logo/sapi.ico" alt="" width="30" height="" class="d-inline-block align-text-top">
+                    PicowStore
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakkami.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            style="background-color: #fc8ca3;border: none;"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="nav-anak.html">Anak-anak</a></li>
+                                <li><a class="dropdown-item" href="nav-couple.html">Couple</a></li>
+                                <li><a class="dropdown-item" href="nav-pria.html">Pria</a></li>
+                                <li><a class="dropdown-item" href="nav-wanita.html">Wanita</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="tentang.html">Tentang</a></li>
+                            <li><a class="dropdown-item" href="../index.html">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid p-4 my-5">
+        <div class="card p-4 shadow text-center">
+            <h1 class="my-4">Pakaian Couple</h1>
+            <div class="row">
+                <div class="col-md-6 col-xl-6">
+                    <a href="../image/couple.jpg" target="_blank"><img src="../image/couple.jpg" alt="" width="300"></a>
+                    <p>Baju Couple Dewasa<br>Rp. 400.000,-</p>
                 </div>
-        </ul>
-        </div>
-    </nav>
-    <div class="content">
-        <div class="tumbnail">
-            <img src="../image/couple.webp" alt="">
-            <p><br><a class="text">Baju Couple Dewasa</a></p><br>
-            <a class="text">Rp. 400.000,-</a>
-        </div>
-        <div class="narasi">
-            <img src="../image/couple2.jpg" alt="">
-            <p><br><a class="text">Baju Couple Dewasa</a></p><br>
-            <a class="text">Rp. 400.000,-</a>
+                <div class="col-6 col-md col-xl-6">
+                    <a href="../image/couple2.jpg" target="_blank"><img src="../image/couple2.jpg" alt=""
+                            width="300"></a>
+                    <p>Baju Couple Dewasa<br>Rp. 400.000,-</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <nav class="navbar">
-        <div class="navbar-bottom">
-            <div class="kontak">
-            <br><strong>PicowStore </strong><br>
-            <br>Jl. Maju No.1, Jepun
-            <br>WA Admin 088888888222
+    <div class="container-fluid text-center py-3 bg-light">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="my-4">
+                    <a class="navbar-brand text-dark fs-3" href="home.html" style="font-family: 'Roman', cursive;">
+                        <img src="../image/logo/sapi.ico" alt="" width="50" height="auto"
+                            class="d-inline-block align-text-top">
+                        PicowStore
+                    </a>
+                </div>
+                <div class="my-3 fs-2">
+                    <a href="https://wa.me/6282313913226" target=“_blank”><i
+                            class='bx bxl-whatsapp bx-tada text-dark'></i></a>
+                    <a href="https://web.facebook.com/zulfiah.syarifah/" target=“_blank”><i
+                            class='bx bxl-facebook-circle bx-tada text-dark'></i></a>
+                    <a href="https://www.instagram.com/zulfiahasy/" target=“_blank”><i
+                            class='bx bxl-instagram bx-tada text-dark'></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 py-3">
+                <div class="my-4 fs-5 text-dark">
+                    <h3>PicowStore</h3>
+                    Jl. Maju No.1, Jepun
+                    <br>WA Admin 088888888222
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="sosial-media">
-            <a href="#" target=“_blank”><i class='bx bxl-whatsapp bx-tada' ></i></a>
-            <a href="#" target=“_blank”><i class='bx bxl-facebook-circle bx-tada' ></i></a>
-            <a href="#" target=“_blank”><i class='bx bxl-instagram bx-tada' ></i></a>
-        </div>
+    <button type="button" class="text-light bg-dark shadow btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class='bx bxs-to-top bx-tada'></i>
+    </button>
 
-        <div class="container2">
-            <ul class="navigation2">
-                <a href="nav-wanita.html"><li>Wanita</li></a>
-                <a href="nav-pria.html"><li>Pria</li></a>
-                <a href="nav-anak.html"><li>Anak-anak</li></a>
-                <a href="nav-couple.html"><li>Couple</li></a>
-            </ul>
-        </div>
-    </nav>
+    <script src="../home.js"></script>
 
-    <button id="tombol" class="tombol"><i class='bx bxs-to-top bx-tada' ></i></button>
-
-    <script src="../javascript/home.js"></script>
-
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
